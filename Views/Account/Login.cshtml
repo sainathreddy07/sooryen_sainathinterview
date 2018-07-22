@@ -1,0 +1,46 @@
+﻿@model CodeTest.Models.LoginModel
+
+@{
+
+    ViewBag.Title = "Log in";
+}
+
+<hgroup>
+    <h1> @ViewBag.Title</h1>
+</hgroup>
+
+
+@using (Html.BeginForm())
+{
+
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.UserName)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.UserName)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.Password)
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.Password)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            
+        </td>
+        <td>
+            <input type="submit" value="Log in" />
+        </td>
+    </tr>
+</table>
+        
+
+
+}
